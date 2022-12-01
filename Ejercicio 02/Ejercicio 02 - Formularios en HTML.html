@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 02 - Formularios en HTML</title>
+</head>
+
+<body>
+    <form action="/">
+        <div>
+            <h3>Ejercicio 02 - Formularios en HTML</h3>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Source+Sans+Pro:wght@600&display=swap');
+                * {
+                    font-family: 'Source Sans Pro', sans-serif;
+                }
+            </style>
+        </div>
+        <div>
+            <br>
+            <label for="name">¿Cual es su nombre?</label>
+            <br>
+            <input type="text" name="name">
+        </div>
+        <div>
+            <br>
+            <label for="edad">¿Cual es su edad?</label>
+            <br>
+            <input type="number" name="edad" id="edad">
+        </div>
+        <div>
+            <br>
+            <label for="comentarios">Comentarios</label>
+            <br>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <br>
+            <button type="submit">Registrar</button>
+            <button type="reset">Reset</button>
+            <br>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -7,17 +7,31 @@
 
 <body>
     <h4>Este es el cuerpo del texto</h4>
-    <form action="Resultados.html" method="post">
+    <form action="Resultados.html" method="get">
+        <br>
         <div>
             <label for="nombre"> Nombre</label>
-            <input name="nombre" id="nombre" ,type="text">
+            <input name="nombre" id="nombre" ,type="text" required>
         </div>
+        <br>
         <div>
-            <label for="apellido">Apellido</label>
-            <input name="apellido" id="apellido" ,type="text">
+            <label for="password">Password</label>
+            <input name="password" id="password" type="password" required>
         </div>
+        <br>
         <div>
-            <button>Login</button>
+            <label for="date">¿Cuando naciste?</label>
+            <input type="date" name="date" id="date">
+        </div>
+        <br>
+        <div>
+            <label for="Comentarios">Comentarios</label>
+            <textarea name="Comentarios" id="Comentarios" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <button type="submit">Login</button>
+            <button type="reset">Reset</button>
         </div>
     </form>
 </body>

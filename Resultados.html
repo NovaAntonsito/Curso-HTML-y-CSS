@@ -5,7 +5,24 @@
     <title>Resultados de la pagina anterior</title>
 </head>
 
-<body>Aqui se mostraran los resultados</body>
+<body>
+    <h3>Aqui se mostraran los resultados</h3>
+    <div id="Resultados"></div>
+    <br>
+    <a href="/Formularios02.html">Volver al formulario</a>
+
+
+</body>
+
+
+
+<script>
+    const resDiv = document.getElementById("Resultados")
+    new URLSearchParams(window.location.search).forEach((val, name) => {
+        resDiv.append(`${name}: ${val}`)
+        resDiv.append(document.createElement('br'))
+    })
+</script>
 
 
 </html>
